@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    tools:context=".MappingActivity">
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="0dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="60dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:text="MAP"
+                android:textSize="26sp"
+                android:fontFamily="@font/bold"
+                android:textColor="@color/colorAccent">
+            </TextView>
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:text="SELECT CLASS"
+        android:textSize="20dp"
+        android:fontFamily="@font/condbold"
+        android:gravity="center"/>
+
+    <Spinner
+        android:id="@+id/spinner_class"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SELECT TEACHER"
+        android:textSize="20dp"
+        android:fontFamily="@font/condbold"
+        android:gravity="center"/>
+
+    <Spinner
+        android:id="@+id/spinner_teach"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SELECT SUBJECT"
+        android:textSize="20dp"
+        android:fontFamily="@font/condbold"
+        android:gravity="center"/>
+
+    <Spinner
+        android:id="@+id/spinner_sub"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/map"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="190dp"
+        android:background="@drawable/button_bg_rounded_corners"
+        android:onClick="map"
+        android:text="@string/map"
+        android:textColor="@color/colorBackgroundLight" />
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorBackground"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddClass">
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="0dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="60dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:text="ADD SUBJECT"
+                android:textSize="26sp"
+                android:fontFamily="@font/bold"
+                android:textColor="@color/colorAccent">
+            </TextView>
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <EditText
+        android:id="@+id/subname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:hint="@string/subname"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:textColor="@color/colorBackgroundLight"
+        android:layout_gravity="center"
+        android:background="@drawable/button_bg_rounded_corners"
+        android:onClick="button"
+        android:text="@string/sub" />
+
+</LinearLayout>
